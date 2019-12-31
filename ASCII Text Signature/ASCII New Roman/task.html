@@ -1,0 +1,70 @@
+<h2 style="text-align: center;">Description</h2>
+
+<p>Let's increase the font size again, and use another font, very similar to the real font called "Times New Roman".</p>
+
+<p>The first 4 lowercase English letters of the font are shown below:</p>
+
+<pre><code class="language-no-highlight">           .o8                       .o8
+          "888                      "888
+ .oooo.    888oooo.   .ooooo.   .oooo888
+`P  )88b   d88' `88b d88' `"Y8 d88' `888
+ .oP"888   888   888 888       888   888
+d8(  888   888   888 888   .o8 888   888
+`Y888""8o  `Y8bod8P' `Y8bod8P' `Y8bod88P"
+</code></pre>
+
+<p>You can download this font <a href="https://stepik.org/media/attachments/lesson/226140/roman.txt" rel="noopener noreferrer nofollow">here</a>. Also, you can download a smaller font from the previous example <a href="https://stepik.org/media/attachments/lesson/226140/medium.txt" rel="noopener noreferrer nofollow">here</a>.</p>
+
+<p>As you may remember, the width of the space in the font "medium" is equal to 4 symbols. In the font "roman" your program should set the width of the space from the symbol "a" - space should be 10 symbols wide.</p>
+
+<p>Pretty accurate, isn't it? Unfortunately, there is no space to include all lowercase and all uppercase letters.</p>
+
+<p>All these fonts have a special description, included in their .txt file. The first line of the file contains two numbers. The first number is font size, indicating how many lines are needed to print one line of text using this font. For example, the font "medium" needs 3 lines, and the font "roman" needs 10. The second number is the number of characters described in the file. Both fonts have information about 52 characters: 26 uppercase and 26 lowercase letters.</p>
+
+<p>The next lines contain information about characters, one after another. The information about one character contains this character in the first place, then the width of the character, and on the next lines, the character itself. Note, that these fonts contain a column of spaces at the end of every symbol, so you don't need to add any special.</p>
+
+<p>Don't worry, reading text from a file is as simple as reading from a console. You can use a scanner to do this as well. Just instead of <code>System.`in`</code>, pass <code>File(pathToFont)</code> when creating a scanner. <b>Please, use an absolute path, to avoid problems with checking.</b> For example, use <code>Scanner(File("C:/fonts/roman.txt"))</code> for the font "roman" on Windows. Or <code>Scanner(File("/home/username/fonts/roman.txt"))</code> on Linux/MacOS systems.</p>
+
+<p>In this stage, you need to create a program that generates a name of the badge with the font "roman." It should also print the status of this person with the font "medium." The status of the person should be centered. Do not forget about cases when the length of the status is longer than the length of the name and surname! In these cases, the name and surname should be centered.</p>
+
+<h2 style="text-align: center;">Output examples</h2>
+
+<p>The examples are shown below:</p>
+
+<pre><code class="language-no-highlight">Enter name and surname: Ian One
+Enter person's status: VIP
+888888888888888888888888888888888888888888888888888888888888888888888888888888888
+88  ooooo                                   .oooooo.                           88
+88  `888'                                  d8P'  `Y8b                          88
+88   888   .oooo.   ooo. .oo.             888      888 ooo. .oo.    .ooooo.    88
+88   888  `P  )88b  `888P"Y88b            888      888 `888P"Y88b  d88' `88b   88
+88   888   .oP"888   888   888            888      888  888   888  888ooo888   88
+88   888  d8(  888   888   888            `88b    d88'  888   888  888    .o   88
+88  o888o `Y888""8o o888o o888o            `Y8bood8P'  o888o o888o `Y8bod8P'   88
+88                                                                             88
+88                                                                             88
+88                                                                             88
+88                                _  _ _ ___                                   88
+88                                |  | | |__]                                  88
+88                                 \/  | |                                     88
+888888888888888888888888888888888888888888888888888888888888888888888888888888888</code></pre>
+
+<pre><code class="language-no-highlight">Enter name and surname: A b
+Enter person's status: long participant
+88888888888888888888888888888888888888888888888888888888888888888888888888888888
+88                         .o.                  .o8                           88
+88                        .888.                "888                           88
+88                       .8"888.                888oooo.                      88
+88                      .8' `888.               d88' `88b                     88
+88                     .88ooo8888.              888   888                     88
+88                    .8'     `888.             888   888                     88
+88                   o88o     o8888o            `Y8bod8P'                     88
+88                                                                            88
+88                                                                            88
+88                                                                            88
+88  _    ____ _  _ ____      ___  ____ ____ ___ _ ____ _ ___  ____ _  _ ___   88
+88  |    |  | |\ | | __      |__] |__| |__/  |  | |    | |__] |__| |\ |  |    88
+88  |___ |__| | \| |__]      |    |  | |  \  |  | |___ | |    |  | | \|  |    88
+88888888888888888888888888888888888888888888888888888888888888888888888888888888</code></pre>
+
+<p> </p>
